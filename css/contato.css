@@ -1,5 +1,5 @@
 .secao-contato {
-    width: 80%;
+    width: 60%;
     margin: auto;
     text-align: center;
     padding: 12px;
@@ -44,6 +44,18 @@
     background-position: center;
     color: white;
     text-align: center;
+}
+
+@media only screen and (max-width: 1165px) {
+    .secao-contato {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .secao-contato {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 890px) {
