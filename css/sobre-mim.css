@@ -1,0 +1,114 @@
+.secao-sobre-mim {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 20px;
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 50px;
+}
+
+.mais-sobre-mim-info hr {
+    margin: 30px 0 20px 0;
+    opacity: 0.5;
+}
+
+.sobre h2, .conhecimentos-tecnicos h2 {
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.sobre p, conhecimentos-tecnicos p {
+    padding: 10px 0;
+}
+
+.sobre p a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.btn-baixar-curriculo {
+    background-color: rgb(250, 53, 93);
+    color: white;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 3px;
+}
+
+.btn-baixar-curriculo:hover {
+    background-color: rgb(231, 35, 74);
+}
+
+.lista-conhec-tecnicos {
+    margin: 20px 0;
+    padding: 20px 10px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-conhec-item {
+    list-style: none;
+    padding: 3px 0;
+}
+
+.sobre-mim-redes-sociais h2 {
+    padding: 10px 0;
+}
+
+.sobre-mim-redes-sociais img {
+    padding: 10px;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.container-redes-sociais {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+}
+
+.rede-social {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(40, 100, 150);
+    border-radius: 50%;
+}
+
+.rede-social i {
+    font-size: 32px;
+    color: white;
+}
+
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 810px) {
+    .secao-sobre-mim {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-mim-redes-sociais img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .lista-conhec-item {
+        font-size: 14px;
+    }
+}

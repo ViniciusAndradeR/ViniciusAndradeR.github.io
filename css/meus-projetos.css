@@ -1,0 +1,104 @@
+.secao-meus-projetos {
+    content: "";
+    /* https://unsplash.com/photos/_yC2htzMYnI */
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative; 
+    color: white;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 48px;
+    margin-bottom: 24px;
+}
+
+.secao-meus-projetos h2 {
+    padding: 24px;
+    text-shadow: 3px 3px 6px rgb(128, 128, 128);
+}
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 36px;
+    margin-bottom: 64px;
+}
+
+.projeto {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    border: 5px solid white;
+    width: 360px;
+    margin: auto;
+    text-shadow: 3px 3px 6px rgb(128, 128, 128);
+}
+
+.container-capa-projeto {
+    position: relative;
+}
+
+.capa-projeto {
+    width: 350px;
+    height: 200px;
+}
+
+.capa-projeto-breve {
+    width: 350px;
+    height: 200px;
+    font-size: 80px;
+    padding: 20px;
+}
+
+.efeito-img-link {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.icone-link {
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projeto-titulo {
+    padding: 15px 0;
+    font-size: 22px;
+}
+
+.projeto-descricao {
+    height: 110px;
+    padding: 5px 10px 20px 10px;
+    letter-spacing: 1px;
+}
+
+.btn-todos-projetos {
+    background-color: #fff;
+    color: #000;
+    padding: 16px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+
+@media only screen and (max-width: 1494px) {
+    .container-projetos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container-projetos {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/menu-topo.css" />
+		<link rel="stylesheet" href="./css/sobre-mim.css" />
+		<link rel="stylesheet" href="./css/meus-projetos.css" />
+		<link rel="stylesheet" href="./css/contato.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Portfolio - Vinicius A. Ribeiro</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./imagens/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./imagens/favicons/favicon-16x16.png">
+		<link rel="manifest" href="./imagens/favicons/site.webmanifest">
+		<link rel="mask-icon" href="./imagens/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<!-- Início do Menu Topo -->
+		<nav class="container-topo" id="inicio">
+			<ul class="container-menu-topo">
+				<div class="menu-topo-esquerdo">
+					<li class="menu-item"><a onclick="esconderMenuToggle()" href="#inicio">Início</a></li>
+				</div>
+				<div class="menu-topo-direito">
+					<li class="menu-item"><a href="#sobre">Sobre mim</a></li>
+					<li class="menu-item"><a href="#projetos">Meus Projetos</a></li>
+					<li class="menu-item"><a href="#contato">Contato</a></li>
+				</div>
+				<div class="menu-topo-tela-pequena">
+					<li class="menu-icone-hamburguer">
+						<a class="icone-hamburguer">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+					</li>
+				</div>
+			</ul>
+
+			<!-- Início do Menu Toggle -->
+			<ul class="menu-toggle fixar-menu-toggle esconder-menu-toggle">
+				<li class="menu-toggle-item"><a onclick="esconderMenuToggle()" href="#sobre">Sobre mim</a></li>
+				<li class="menu-toggle-item"><a onclick="esconderMenuToggle()" href="#projetos">Meus Projetos</a></li>
+				<li class="menu-toggle-item"><a onclick="esconderMenuToggle()" href="#contato">Contato</a></li>
+			</ul>
+			<!-- Fim do Menu Toggle -->
+
+			<div class="sobre-mim">
+				<div class="sobre-mim-info">
+					<h1>
+						Oi, eu sou o <br />
+						Vinícius!
+					</h1>
+					<p>
+						Aspirante à Desenvolvedor Web buscando minha primeira oportunidade
+						de trabalho na área de desenvolvimento (quem sabe na sua empresa??).
+					</p>
+				</div>
+				<div class="sobre-mim-img">
+					<img
+						class="img-perfil-header"
+						src="./imagens/foto-perfil-desenho-quad-transparent.png"
+						alt="Foto Perfil Desenho"
+					/>
+					<div class="efeito-fundo-img"></div>
+				</div>
+			</div>
+		</nav>
+		<!-- Fim do Menu Topo -->
+
+		<!-- Início da Seção Sobre Mim -->
+		<section class="secao-sobre-mim adicionar-margin-top" id="sobre">
+			<div class="mais-sobre-mim-info">
+				<div class="sobre">
+					<h2>Sobre mim</h2>
+					<p>
+						Formado em Segurança da Informação em 2016 e Análise e
+						Desenvolvimento de Sistemas em 2021 pela
+						<a href="https://fatecourinhos.edu.br/" target="_blank">
+							Faculdade de Tecnologia de Ourinhos </a
+						>.
+					</p>
+					<p>
+						Apaixonado em Design e Desenvolvimento de Sistemas que demandam
+						processos criativos como criação de Páginas Web e Aplicativos
+						Mobile.
+					</p>
+					<p style="margin-bottom: 20px">
+						Atualmente focado em aprender mais sobre a linguagem JavaScript
+						antes de me aprofundar em Frameworks como Node.js, Vue, JQuery,
+						Bootstrap, React Native, entre outros.
+					</p>
+					<!-- <a class="btn-baixar-curriculo" href="#">Baixar Currículo</a> -->
+				</div>
+				<hr />
+				<div class="conhecimentos-tecnicos">
+					<h2>Conhecimentos Técnicos</h2>
+					<p>
+						Durante minha vida como aluno e professor de ensino técnico, aprendi
+						diversas tecnologias e ferramentas de grande importância para meu
+						futuro profissional.
+					</p>
+					<div class="lista-conhec-tecnicos">
+						<ul class="lista-coluna">
+							<li class="lista-conhec-item">HTML5</li>
+							<li class="lista-conhec-item">CSS3</li>
+							<li class="lista-conhec-item">JavaScript</li>
+						</ul>
+						<div class="lista-coluna">
+							<li class="lista-conhec-item">PHP</li>
+							<li class="lista-conhec-item">VirtualBox</li>
+							<li class="lista-conhec-item">Linux</li>
+						</div>
+						<div class="lista-coluna">
+							<li class="lista-conhec-item">Windows</li>
+							<li class="lista-conhec-item">MySQL</li>
+							<li class="lista-conhec-item">WordPress</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sobre-mim-redes-sociais">
+				<h2>Me siga nas Redes Sociais</h2>
+				<img src="./imagens/redes-sociais.png" alt="Redes Sociais" />
+				<div class="container-redes-sociais">
+					<a href="#" class="rede-social"
+						><i class="fa-brands fa-linkedin-in"></i
+					></a>
+					<a href="#" class="rede-social"
+						><i class="fa-brands fa-facebook"></i></i
+					></a>
+					<a href="#" class="rede-social"
+						><i class="fa-brands fa-square-instagram"></i></i
+					></a>
+          <a href="#" class="rede-social"
+						><i class="fa-brands fa-github"></i></i
+					></a>
+				</div>
+			</div>
+		</section>
+		<!-- Fim da Seção Sobre Mim -->
+
+    <!-- Início da Seção Meus Projetos -->
+    <section class="secao-meus-projetos" id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="container-projetos">
+        <!-- Início de um Projeto Individual -->
+        <a href="https://viniciusandrader.github.io/Projetos/Projeto-Restaurante-Completo/index.html" target="_blank" class="projeto">
+			<div class="container-capa-projeto">
+				<img class="capa-projeto" src="./imagens/projeto-restaurante-min.jpg" alt="Capa Projeto">
+				<div class="efeito-img-link">
+					<div class="icone-link">
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</div>
+				</div>
+			</div>
+			<div class="projeto-info">
+				<h3 class="projeto-titulo">Restaurante</h3>
+				<p class="projeto-descricao">Primeiro projeto desenvolvido que consta uma Landing Page e um Cardápio com itens gerados "dinamicamente" através de vetores de objetos em JavaScript. Apenas HTML, CSS e JavaScript.</p>
+			</div>
+		</a>
+        <!-- Fim de um Projeto Individual -->
+
+        <!-- Início de um Projeto Individual -->
+        <a href="https://viniciusandrader.github.io/Projetos/Projeto-Restaurante-Completo/index.html" target="_blank" class="projeto">
+			<div class="container-capa-projeto">
+				<p class="capa-projeto-breve">Em breve...</p>
+				<div class="efeito-img-link">
+					<div class="icone-link">
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</div>
+				</div>
+			</div>
+			<div class="projeto-info">
+				<h3 class="projeto-titulo">Projeto em Desenvolvimento</h3>
+				<p class="projeto-descricao">Projeto ainda em desenvolvimento. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam est hic perspiciatis perferendis! Ipsam, minima!</p>
+			</div>
+		</a>
+        <!-- Fim de um Projeto Individual -->
+
+        <!-- Início de um Projeto Individual -->
+        <a href="https://viniciusandrader.github.io/Projetos/Projeto-Restaurante-Completo/index.html" target="_blank" class="projeto">
+			<div class="container-capa-projeto">
+				<p class="capa-projeto-breve">Em breve...</p>
+				<div class="efeito-img-link">
+					<div class="icone-link">
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</div>
+				</div>
+			</div>
+			<div class="projeto-info">
+				<h3 class="projeto-titulo">Projeto em Desenvolvimento</h3>
+				<p class="projeto-descricao">Projeto ainda em desenvolvimento. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam est hic perspiciatis perferendis! Ipsam, minima!</p>
+			</div>
+		</a>
+        <!-- Fim de um Projeto Individual -->
+
+		<!-- Início de um Projeto Individual -->
+        <a href="https://viniciusandrader.github.io/Projetos/Projeto-Restaurante-Completo/index.html" target="_blank" class="projeto">
+			<div class="container-capa-projeto">
+				<p class="capa-projeto-breve">Em breve...</p>
+				<div class="efeito-img-link">
+					<div class="icone-link">
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</div>
+				</div>
+			</div>
+			<div class="projeto-info">
+				<h3 class="projeto-titulo">Projeto em Desenvolvimento</h3>
+				<p class="projeto-descricao">Projeto ainda em desenvolvimento. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam est hic perspiciatis perferendis! Ipsam, minima!</p>
+			</div>
+		</a>
+        <!-- Fim de um Projeto Individual -->
+      </div>
+	  <a href="#" class="btn-todos-projetos">Todos os meus Projetos</a>
+    </section>
+	<!-- Fim da Seção Meus Projetos -->
+
+	<!-- Início da Seção Contato -->
+	<section class="secao-contato" id="contato">
+		<h2>Entre em Contato</h2>
+		<div class="container-contato">
+			<div class="contato-info">
+				<h3>O porquê de entrar em contato comigo</h3>
+				<p>Você pode entrar em contato comigo para:</p>
+				<ul class="lista-contato">
+					<li>me dar sugestões,</li>
+					<li>me pedir sugestões, ou</li>
+					<li>me oferecer uma <b>oportunidade</b>!</li>
+				</ul>
+				<p>Todo e qualquer contato será sempre bem-vindo e apreciado.</p>
+				<h3>Como entrar em contato comigo</h3>
+				<p>Eu não sou uma pessoa muito ativa nas redes sociais mas sempre estou on-line no meu WhatsApp ou verificando meu e-mail:</p>
+				<ul class="lista-contato">
+					<li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5514999031377&text=Ol%C3%A1%2C%20Vinicius!%20Vim%20pelo%20seu%20Portf%C3%B3lio." target="_blank">(14) 99903-1377</a></li>
+					<li>E-mail: <a href="mailto:vinicius.andrade125@gmail.com">vinicius.andrade125@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="contato-links"></div>
+		</div>
+	</section>
+	<!-- Fim da Seção Contato -->
+
+		<!-- Início do Rodapé -->
+		<footer class="footer">
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/ViniciusAndradeR" target="_blank"
+          >Vinicius A. Ribeiro (GitHub)</a
+        >
+        em 11/10/2022.
+      </p>
+    </footer>
+		<!-- Fim do Rodapé -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>

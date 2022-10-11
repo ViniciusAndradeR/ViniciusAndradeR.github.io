@@ -1,0 +1,68 @@
+.secao-contato {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+    padding-bottom: 48px;
+}
+
+.secao-contato h2 {
+    padding: 12px 0 36px 0;
+}
+
+.container-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.container-contato h3 {
+    padding: 16px 0 6px 0;
+}
+
+.container-contato p {
+    padding: 6px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding: 8px;
+}
+
+.lista-contato a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.contato-info {
+    max-width: 500px;
+}
+
+.contato-links {
+    /* https://unsplash.com/photos/_yC2htzMYnI */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+    .container-contato {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        width: 100%;
+    }
+    .contato-links {
+        display: none;
+    }
+
+    .contato-info {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .secao-contato {
+        width: 95%;
+    }
+}
