@@ -63,6 +63,7 @@
 }
 
 .menu-icone-hamburguer {
+    list-style: none;
     text-decoration: none;
 }
 
