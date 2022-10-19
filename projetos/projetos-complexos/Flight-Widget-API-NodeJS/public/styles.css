@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background: rgb(247,206,148);
+    background: radial-gradient(circle, rgba(247,206,148,1) 0%, rgba(227,166,82,1) 100%);
+}
+
+h1 {
+    padding: 10px;
+}
+
+#icone-aviao {
+    width: 50px;
+}
+
+.embarques {
+    background-color: rgb(6, 6, 6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.embarques table {
+    background-color: rgb(46, 46, 46);
+    text-align: left;
+    height: 450px;
+    padding: 15px;
+}
+
+.embarques table div {
+    border: solid 4px rgb(26, 26, 26);
+    background-color: #000;
+    min-width: 28px;
+    height: 48px;
+    float: left;
+    text-align: center;
+}
+
+#horario {
+    width: 180px;
+}
+
+#destino {
+    width: 640px;
+}
+
+#voo {
+    width: 240px;
+}
+
+#portao {
+    width: 140px;
+}
+
+#status {
+    width: 230px;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg)
+    }
+
+    50% {
+        transform: rotateX(90deg)
+    }
+
+    100% {
+        transform: rotateX(0deg)
+    }
+}
