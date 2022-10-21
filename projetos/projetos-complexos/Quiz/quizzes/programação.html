@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Quiz App - Programação</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<style>
+			body {
+				height: 100%;
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-quiz-header">
+			<h1>Quiz App - Programação</h1>
+		</div>
+		<div class="container-quiz-questoes">
+			<h2 id="quest-num">Questão</h2>
+			<p id="quest-enunciado"></p>
+			<div id="quest-alternativas"></div>
+			<div class="quest-letras-alts">
+				<div>
+					<button class="btn-alternativa">A</button>
+					<button class="btn-alternativa">B</button>
+					<button class="btn-alternativa">C</button>
+					<button class="btn-alternativa">D</button>
+					<button class="btn-alternativa">E</button>
+				</div>
+				<a href="#" class="btn proxima-questao"
+					><i class="fa-solid fa-arrow-right-long"></i
+				></a>
+			</div>
+			<div class="container-fim-quiz esconder-fim-quiz">
+				<a href="../index.html" class="btn btn-fim-quiz"
+					>Voltar à Página Inicial</a
+				>
+				<a href="./programação.html" class="btn btn-fim-quiz"
+					>Tentar Novamente</a
+				>
+			</div>
+		</div>
+		<script src="./dados/dadosProgramacao.js"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>
