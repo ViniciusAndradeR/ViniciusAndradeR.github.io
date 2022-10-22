@@ -8,8 +8,7 @@
 }
 
 body {
-    background: rgb(62,117,163);
-    background: linear-gradient(135deg, rgba(62,117,163,1) 0%, rgba(39,140,223,1) 100%);
+    background: rgb(80, 148, 204);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,8 +37,8 @@ body {
     padding: 20px 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .btn {
@@ -69,6 +68,50 @@ body {
     -webkit-box-shadow: none; 
     box-shadow: none;
 }
+
+.btn-tema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 256px;
+    height: 128px;
+    border-radius: 12px;
+    -webkit-box-shadow: 2px 2px 0px 1px #000000; 
+    box-shadow: 4px 3px 0px 1px rgb(14, 56, 90);
+    transition: all .2s ease;
+    background-position: center;
+}
+
+.btn-tema:hover {
+    transform: scale(1.1);
+}
+
+.btn-tema:active {
+    transform: translate(4px, 4px);
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+
+.btn-programacao {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://unsplash.com/photos/4hbJ-eymZ1o/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY2Mzc2Njcw&force=true&w=320');
+}
+
+.btn-ciencia-computacao {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://unsplash.com/photos/iar-afB0QQw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfDB8fHwxNjY2Mzc4MzI1&force=true&w=320');
+}
+
+.btn-conhec-gerais {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://unsplash.com/photos/kBk9ysFIp44/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY2Mzc4NjQw&force=true&w=320');
+}
+
+.btn-todos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('https://unsplash.com/photos/58Z17lnVS4U/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8YnJhaW58ZW58MHwwfHx8MTY2NjM0MTU4Nw&force=true&w=320');
+}
+
 
 
 /* PÁGINAS DE QUESTÕES */
@@ -182,26 +225,30 @@ body {
 
 /* RESPONSIVIDADE */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1220px) {
 
     .container-botoes {
         padding: 20px 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
     }
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
+
+    body {
+        height: 100%;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
 
     .container-botoes {
         padding: 20px 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .container-quiz-questoes {
@@ -215,13 +262,6 @@ body {
 }
 
 @media only screen and (max-width: 404px) {
-
-    .container-botoes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .container-quiz-inicio p, .container-quiz p {
         padding: 10px 0;
