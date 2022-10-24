@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.container-lista-tarefas {
+    background-color: white;
+    padding: 20px 30px 80px 30px;
+    border-radius: 8px;
+}
+
+.container-lista-tarefas h1 {
+    text-align: center;
+    padding: 20px 0 32px 0;
+    text-transform: uppercase;
+}
+
+#campo-add-tarefa {
+    width: 400px;
+    padding: 6px 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.btn-adicionar-tarefa {
+    background-color: rgb(32, 114, 7);
+    border: 2px solid rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lista-tarefas {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.item-lista {
+    padding: 6px 0;
+}
+
+.item-opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+    padding: 0 4px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.btns-item {
+    margin-top: 3px;
+}
+
+#btn-excluir {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btns-controle {
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.btn-controle {
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.marcado {
+    background-color: rgba(13, 161, 13, 0.9);
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: rgb(1, 88, 88);
+    color: #ccc;
+}
+
+.footer a {
+    color: #ddd;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #fff;
+}

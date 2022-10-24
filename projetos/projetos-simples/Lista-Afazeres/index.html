@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lista de Afazeres</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container-lista-tarefas">
+			<h1>Lista de Afazeres</h1>
+			<input
+				type="text"
+				name="Adicionar Tarefa"
+				id="campo-add-tarefa"
+				placeholder="Adicionar Tarefa"
+			/>
+			<button class="btn-adicionar-tarefa" onclick="adicionarTarefa()">
+				Adicionar
+			</button>
+			<ul class="lista-tarefas"></ul>
+			<div class="btns-controle">
+				<button class="btn-controle feito">Marcar como feito</button>
+				<button class="btn-controle excluir">Excluir Selecionados</button>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>
+				Desenvolvido por
+				<a href="https://github.com/ViniciusAndradeR" target="_blank"
+					>Vinicius A. Ribeiro (GitHub)</a
+				>
+				em 24/10/2022.
+			</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
